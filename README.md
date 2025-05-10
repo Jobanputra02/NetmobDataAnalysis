@@ -16,4 +16,9 @@ Contextual Data: Temperature records and Points of Interest (POIs) were also int
 
 #### Spatial Data Visualization
 
-<img src="images/city_borders_visualization.png" width="35%" height="100%"/> 
+Left Image outlines the commune-level borders within each city. Communes represent the smallest administrative units in France. While right image highlights IRIS zones, which allow for fine-grained geographic segmentation used in demographic studies.
+
+<p float="left">
+  <img src="images/commune_borders_visualization.png" width="40%" height="100%" hspace="30"/> 
+  <img src="images/iris_borders_visualization.png" width="40%" height="100%" hspace="30"/> 
+</p>
