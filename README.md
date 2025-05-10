@@ -82,6 +82,7 @@ Left Image outlines the commune-level borders within each city. Communes represe
 ### Consumption vs Weekday
 
 - Clear pattern emerged showing consumption increased on weekends and Fridays, while weekdays (especially Monday–Wednesday) showed lower activity.
+- Left plot shows total average consumption vs weekday; Right plot shows for each individual cities. All the cities does not follow the average pattern.
 
 <p float="left">
   <img src="images/consumption_vs_weekday.png" width="40%" height="100%" hspace="30"/> 
@@ -91,6 +92,7 @@ Left Image outlines the commune-level borders within each city. Communes represe
 ### Consumption vs Hour
 
 - Most cities showed peak activity during late evening hours (around 10 PM to midnight), with noticeably lower usage in early mornings.
+- Right plot shows total average consumption vs hour; Right plot shows consumption for individual cities. All the cities follows the average pattern.
 
 <p float="left">
   <img src="images/consumption_vs_hour.png" width="40%" height="100%" hspace="30"/> 
