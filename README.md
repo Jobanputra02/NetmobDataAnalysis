@@ -1,6 +1,41 @@
 # Netmob Data Analysis
 Mobile Traffic Data Analysis from NetMob23 to explore Web Adult consumption patterns across 20 French cities. It integrates demographic, temperature, and spatial data (POIs) to uncover trends in web traffic and understand regional variations in consumption behavior.
 
+## How to Run
+
+### 1. Clone or download the repo
+To run the project, first, clone or download the repsitory, then get the required dataset. The data used in this project comes from the <a href="https://github.com/nds-group/netmob2023challenge">NetMob23 Challenge</a> and access to it is strictly restricted. Only approved participants will be granted access under the terms and conditions specified by the organizers.
+
+You will also need auxiliary datasets such as:
+
+- INSEE demographic and socioeconomic data for French communes (publicly available)
+- Weather/temperature data for French cities (e.g., via Open-Meteo or similar APIs)
+
+### 2. Project Structure
+Before running the notebook, ensure your project folder is structured as follows:
+
+```
+/project_directory/
+│-- data/                    # Downloaded dataset directory
+│-- main.ipynb               # Jupyter Notebook for analysis
+│-- requirements.txt         # Required dependencies
+│-- README.md                # Project documentation
+```
+
+### 3. Install Requirements
+Ensure you have **Python 3.12** installed. Then, install the required dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Notebook
+Once the dependencies are installed and the data is in place, you can open and use the notebook as needed:
+
+```bash
+jupyter notebook "main.ipynb"
+```
+
 ## Data Description
 
 This project uses anonymized mobile traffic data from the <a href="https://github.com/nds-group/netmob2023challenge">NetMob23 Challenge</a>, focusing on web activity across 20 French cities. The dataset includes:
@@ -44,11 +79,32 @@ Left Image outlines the commune-level borders within each city. Communes represe
 
 ## Exploratory Data Analysis
 
-Key insights include:
+### Consumption vs Weekday
+
+- Clear pattern emerged showing consumption increased on weekends and Fridays, while weekdays (especially Monday–Wednesday) showed lower activity.
+
+<p float="left">
+  <img src="images/consumption_vs_weekday.png" width="40%" height="100%" hspace="30"/> 
+  <img src="images/consumption_vs_weekday_citywise.png" width="40%" height="100%" hspace="30"/> 
+</p>
+
+### Consumption vs Hour
 
 - Most cities showed peak activity during late evening hours (around 10 PM to midnight), with noticeably lower usage in early mornings.
+- 
+<p float="left">
+  <img src="images/consumption_vs_hour.png" width="40%" height="100%" hspace="30"/> 
+  <img src="images/consumption_vs_hour_citywise.png" width="40%" height="100%" hspace="30"/> 
+</p>
+
+### Consumption vs Temperature
+
 - No strong or consistent correlation was found w.r.t temperature; both high and low consumption occurred across a wide range of temperatures.
-- Another clear pattern emerged showing consumption increased on weekends and Fridays, while weekdays (especially Monday–Wednesday) showed lower activity.
+
+### Consumption vs Public Holidays
+
+- Patterns Differ for each city, few cities shows higher consumption on weekends, while other city's consumption rises over weekends.
+- Most of the city's patterns shows comparatively lower consumption on public holidays and city specific events with a few exception.
 
 ## Socioeconomic/Demographic Factors Analysis
 
@@ -97,40 +153,18 @@ Key insights include:
 
 <img src="images/consumption_vs_poi_paris.png" height="100%"/> 
 
-## How to Run
+## Limitations
 
-### 1. Clone or download the repo
-To run the project, first, clone or download the repsitory, then get the required dataset. The data used in this project comes from the <a href="https://github.com/nds-group/netmob2023challenge">NetMob23 Challenge</a> and access to it is strictly restricted. Only approved participants will be granted access under the terms and conditions specified by the organizers.
-
-You will also need auxiliary datasets such as:
-
-- INSEE demographic and socioeconomic data for French communes (publicly available)
-- Weather/temperature data for French cities (e.g., via Open-Meteo or similar APIs)
-
-### 2. Project Structure
-Before running the notebook, ensure your project folder is structured as follows:
-
-```
-/project_directory/
-│-- data/                    # Downloaded dataset directory
-│-- main.ipynb               # Jupyter Notebook for analysis
-│-- requirements.txt         # Required dependencies
-│-- README.md                # Project documentation
-```
-
-### 3. Install Requirements
-Ensure you have **Python 3.12** installed. Then, install the required dependencies by running:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Notebook
-Once the dependencies are installed and the data is in place, you can open and use the notebook as needed:
-
-```bash
-jupyter notebook "main.ipynb"
-```
+- Data access restricted to NetMob 2023 participants; not publicly shareable
+- Analysis limited to urban communes; rural areas not included
+- No Wi-Fi data; only mobile network traffic analyzed
+- IRIS-level data missing for some cities (e.g., Nice)
+- May 12th excluded due to network outage
+- Weak correlations with socioeconomic variables (unemployment, education, age)
+- Potential overfitting in interaction-based models
+- Commune-level data; lacks individual behavioral insights
+- External event data manually merged; may be incomplete
+- POI analysis based on assumptions; limited causal inference
 
 ## Authors
 
