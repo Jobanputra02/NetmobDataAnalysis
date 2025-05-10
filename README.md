@@ -91,7 +91,7 @@ Left Image outlines the commune-level borders within each city. Communes represe
 ### Consumption vs Hour
 
 - Most cities showed peak activity during late evening hours (around 10 PM to midnight), with noticeably lower usage in early mornings.
-- 
+
 <p float="left">
   <img src="images/consumption_vs_hour.png" width="40%" height="100%" hspace="30"/> 
   <img src="images/consumption_vs_hour_citywise.png" width="40%" height="100%" hspace="30"/> 
