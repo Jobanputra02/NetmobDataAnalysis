@@ -3,7 +3,7 @@ Mobile Traffic Data Analysis from NetMob23 to explore Web Adult consumption patt
 
 ## How to Run
 
-### 1. Clone or download the repo
+### 1. Clone or download the repository
 To run the project, first, clone or download the repsitory, then get the required dataset. The data used in this project comes from the <a href="https://github.com/nds-group/netmob2023challenge">NetMob23 Challenge</a> and access to it is strictly restricted. Only approved participants will be granted access under the terms and conditions specified by the organizers.
 
 You will also need auxiliary datasets such as:
