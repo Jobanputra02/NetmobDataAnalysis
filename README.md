@@ -52,7 +52,7 @@ Key insights include:
 
 ## Socioeconomic/Demographic Factors Analysis
 
-### 1. Unemployment Rate Analysis
+### Unemployment Rate Analysis
 
 <img src="images/unemployment_vs_logconsumption.png" height="100%"/>
 
@@ -61,7 +61,7 @@ Key insights include:
   - Higher unemployment = increased adult content consumption in some communes.
 
 
-### 2. Level of Education Analysis
+### Level of Education Analysis
   
 <img src="images/educationcategory_vs_logconsumption.png" height="100%"/> 
 
@@ -70,10 +70,70 @@ Key insights include:
   - Positive correlation for Undergraduate and Postgraduate education levels, suggesting higher consumption with higher education.
   - Higher consumption is seen in areas with lower levels of education (Primary/Secondary).
 
-### 3. Age Group Composition Analysis
+### Age Group Composition Analysis
 
 <img src="images/agecategory_vs_logconsumption.png" height="100%"/> 
 
 - **Findings**:
   - None of the age brackets exhibits a strong linear association with consumption.
   - Even when combining age groups, we do not substantially improve our ability to predict adult web consumption.
+
+## POIs Analysis
+
+#### Categories of POIs Analyzed:
+- **Medical Facilities**: Hospital, Clinic, Doctor, Dentist, Pharmacy, etc.
+- **Residential Areas**: Apartments, Condominiums, Housing Complexes, Hostels, etc.
+- **Tourist Attractions**: National Parks, Museums, Amusement Parks, Beaches, etc.
+- **Libraries**: Public Libraries, University Libraries, Research Libraries, etc.
+- **Transportation Hubs**: Bus Stations, Train Stations, Airports, etc.
+- **Educational Locations**: Universities, Colleges, Preschools, etc.
+- **Tourist Accommodations**: Hotels, Motels, Resorts, etc.
+
+#### Key Findings:
+- **Education-related locations** consistently exhibit the highest levels of adult web consumption across all observed cities.
+- **Medical facilities** and **tourist accommodations** also show high consumption.
+- **Residential areas** and **libraries** exhibit the lowest consumption, likely due to the use of mobile data rather than WiFi at home.
+- **Transportation hubs** show moderate consumption, with fluctuations observed between cities due to differing local behaviors and infrastructure.
+
+<img src="images/consumption_vs_poi_paris.png" height="100%"/> 
+
+## How to Run
+
+### 1. Clone or download the repo
+To run the project, first, clone or download the repsitory, then get the required dataset. The data used in this project comes from the <a href="https://github.com/nds-group/netmob2023challenge">NetMob23 Challenge</a> and access to it is strictly restricted. Only approved participants will be granted access under the terms and conditions specified by the organizers.
+
+You will also need auxiliary datasets such as:
+
+- INSEE demographic and socioeconomic data for French communes (publicly available)
+- Weather/temperature data for French cities (e.g., via Open-Meteo or similar APIs)
+
+### 2. Project Structure
+Before running the notebook, ensure your project folder is structured as follows:
+
+```
+/project_directory/
+│-- data/                    # Downloaded dataset directory
+│-- main.ipynb               # Jupyter Notebook for analysis
+│-- requirements.txt         # Required dependencies
+│-- README.md                # Project documentation
+```
+
+### 3. Install Requirements
+Ensure you have **Python 3.12** installed. Then, install the required dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Notebook
+Once the dependencies are installed and the data is in place, you can open and use the notebook as needed:
+
+```bash
+jupyter notebook "main.ipynb"
+```
+
+## Authors
+
+- **Syed Mohammed Khalid** – syyy00001@stud.uni-saarland.de
+- **Prakhar Narain Srivastava** – prsr00001@stud.uni-saarland.de
+- **Chaitanya Rajeshbhai Jobanputra** – chjo00006@stud.uni-saarland.de
