@@ -170,6 +170,6 @@ Left Image outlines the commune-level borders within each city. Communes represe
 
 ## Authors
 
-- **Syed Mohammed Khalid** – syyy00001@stud.uni-saarland.de
-- **Prakhar Narain Srivastava** – prsr00001@stud.uni-saarland.de
-- **Chaitanya Rajeshbhai Jobanputra** – chjo00006@stud.uni-saarland.de
+- **Syed Mohammed Khalid**
+- **Prakhar Narain Srivastava**
+- **Chaitanya Rajeshbhai Jobanputra**
